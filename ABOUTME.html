@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<style>
+
+@import url('<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">');
+
+body{
+background-image: url("background.jpg");
+}
+
+.profile-card {
+border: 0 !important;
+}
+
+.profile-card-header {
+    padding: 0;
+    text-align: center;
+    background-image: url(header2.jpg);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.555);
+    height: 70vh;
+}
+
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    top: 70px;
+    border-radius: 70%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.479);
+}
+
+.profile-card-body {
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
+    border: 0 !important;
+}
+
+.profile-card-footer {
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
+    border: 0 !important;
+}
+
+.name, .username {
+    color: #ffffff;
+}
+
+.name {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.username {
+    font-weight: 300;
+    font-size: 1rem;
+    opacity: .75;
+}
+
+.text-center {
+    font-family: 'Architects Daughter', cursive;
+}
+
+a{
+  position:bottom;   
+  top:50%;  
+  left:20%;  
+  transform:translate (-50%,-50%);  
+  width:200px;
+  height:60px;  
+  text-align:center;  
+  line-height:60px;
+  color:#ffffff;
+  font-size:24px;
+  text-transform:uppercase ;
+  text-decoration:none;
+  font-family:sans-serif;
+  box-sizing:border-box ;
+  background:linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size:400%;
+  border-radius:30px; 
+}
+
+a:hover {
+    animation:animate 8s linear infinite;
+     
+}
+
+@keyframes animate 
+{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position:400%;
+    }
+    
+a:before{ 
+content:'';
+position:absolute ;
+top:-5px;
+left:-5px;
+right:-5px;
+bottom:-5px;
+z-index:-1;                  
+background:linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+filter:blur(20px);
+opacity:0;
+transition:0.5s;
+}
+
+a:hover:before{
+    filter:blur(20px);
+    opacity:1;
+    animation:animate 8s linear infinite ;
+}
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="col-md-12">
+    <div class="container">
+        <div class="card profile-card">
+            <div class="card-header profile-card-header">
+                <div class="bg-overlay">
+                    <div class="container">
+    <img class="profile-img" src="profile2.jpg" alt=""> 
+    <div class="mt-3">
+    <h3 class="name">Nurul Ain Irdina Binti Mohd Zawawi</h3>
+    <h4 class="name">Student of Universiti Teknologi Mara, Kampus Rembau</h4>
+    <h5 class="name">[ Information Management ]</h5>
+    </div>
+        <div class="profile-info">
+        <div class="profile-info-row">
+        <div>
+            </div>
+                </div>
+                    </div>
+                        </div>
+                            </div>
+                                </div>
+    <div class="card-body profile-card-body">
+        <div class="container">
+            <h4 class="text-center">About Me</h4>
+            <p class="text-center">My name is Nurul Ain Irdina Binti Mohd zawawi. I was born at Hospital besar Kuala Terengganu on 28 April 1999. I am a last year student at University Teknologi Mara (UiTM) Kampus Rembau and i am currently studying about Information management. There is a lot of things and new information that i learn when i am learning this courses. Honestly, i am verry happy and grateful to learn about this courses. 
+            <br><br>
+            This course has been very challenging for me especially when this semester, me and my classmates have to learn and communicate through online because of the outbreak of corona virus disease 2019 (COVID-19) but we managed to learn a lot about this subject through the coursework and from the various type of learning that has been prepared by our lecturer. Even though some people might telling this subject are challenging because of the practical session, but for me it is worth to study and the most rewarding at the end. 
+            <br><br>
+            The goal I’m currently striving for is to make this world a better place to live in by starting the changes with myself. Sure, I’ve had bad experiences in my life too, but this is exactly what made me the way I am now: grateful, full of love, with a desire to study well because it will help me become a successful person in future and have a high quality of life. I believe that it is manifesting day by day and I feel even more responsibility for what I do and where I go. With all I already have, I know that I’m on the right path and I will do my best to inspire others to live the way they feel like living as well. 
+            </p>
+    </div>
+    </div>
+                
+    </div>
+    <br>
+   <center><a href="HOME.html">HOME</a>
+</body>
+</html>

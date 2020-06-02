@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+
+body{
+background-image: url("background.jpg");
+}
+			
+img {
+    width: 250px;
+    height: 260px;
+    margin-bottom:10px;
+    margin-left:10px;
+    transition:ease-out .5s;
+}
+
+img:hover {
+    transform:scale(-1,1);
+}
+
+a{
+  position:bottom;   
+  top:50%;  
+  left:20%;  
+  transform:translate (-50%,-50%);  
+  width:200px;
+  height:60px;  
+  text-align:center;  
+  line-height:60px;
+  color:#fff;
+  font-size:24px;
+  text-transform:uppercase ;
+  text-decoration:none;
+  font-family:sans-serif;
+  box-sizing:border-box ;
+  background:linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size:400%;
+  border-radius:30px; 
+}
+
+a:hover {
+    animation:animate 8s linear infinite;
+     
+}
+
+@keyframes animate 
+{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position:400%;
+    }
+    
+a:before{ 
+content:'';
+position:absolute ;
+top:-5px;
+left:-5px;
+right:-5px;
+bottom:-5px;
+z-index:-1;                  
+background:linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+filter:blur(20px);
+opacity:0;
+transition:0.5s;
+}
+
+a:hover:before{
+    filter:blur(20px);
+    opacity:1;
+    animation:animate 8s linear infinite ;
+}
+
+		</style>
+	</head>
+
+	<meta charset=utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GALLERY</title>
+	<link rel="stylesheet" type"text/css" href="style.css">
+	<br><br>
+	<center><h1>MY PHOTO GALLERY</h1>
+	<center><p> My photo collection with favourite people</p><br><br>
+
+ <label>
+            <img src="photo1.jpg"/>
+            <img src="photo2.jpg"/>
+            <img src="photo3.jpg"/>
+            <img src="photo4.jpg"/>
+            <div>
+            <img src="photo5.jpg"/>
+            <img src="photo6.jpg"/>
+            <img src="photo7.jpg"/>
+            <img src="photo8.jpg"/>
+            <div>
+            <img src="photo9.jpg"/>
+            <img src="photo10.jpg"/>
+            <img src="photo11.jpg"/>
+            <img src="photo12.jpg"/>           
+        </label>
+        <br>
+ <a href="HOME.html">HOME</a>
+</html>

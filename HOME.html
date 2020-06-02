@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style type="text/css">
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: auto;
+  padding: auto;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+background-image: url("background.jpg");
+}
+.btn{
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #1b1b1b;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.btn.click{
+  left: 260px;
+}
+.btn span{
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.btn.click span:before{
+  
+}
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -300px;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar .text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+  text-decoration:none;
+}
+nav ul{
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a{
+  color: #ffcccc;
+  background: #1e1e1e;
+  border-left-color: #ffcccc;
+}
+.container{
+  margin: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .pro-img{
+
+    width: 250px;
+    height: 260px;
+    border-radius: 70%;
+    position: center;
+    top: 50px;
+    left: 100px;
+    border:5px solid black;
+    background-size: cover;
+    
+}
+.container .pro-img{
+  display: block;
+  margin: auto auto auto auto;
+}
+
+.content{
+    padding: 0px 50px 0px;
+}
+
+.content .content{
+    text-align: center;
+}
+.content .content h1{
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Bangers', cursive;
+}
+
+}
+
+.content .content span.location{
+    display: block;
+    margin:5px 0 20px;
+}
+
+</style>
+
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+<nav class="sidebar">
+      <div class="text">
+AIN.IRDNA'S</div>
+<ul>
+
+        <b><li><a href="HOME.html">HOME<a/>
+        <li><a href="ABOUTME.html">ABOUT<a/>
+        <li><a href="GALLERY.html">GALLERY<a/>
+        <li><a href="PLAYLIST.html">PLAYLIST<a/>
+        <li><a href="CONTACT.html">CONTACT<a/>
+</nav>
+<center>
+    <div class="container">
+    <img src="profile.jpg" class="pro-img">
+        <div class="content">
+          <br> <br> 
+            <div class="content">
+              <h1>Hi !</h1>
+              <h1>WELCOME TO</h1>
+             <marquee> <h1>A I N  I R D I N A  </h1></marquee>
+              <h1> PERSONAL WEBSITE</h1> <br><br> <br> 
+
+         <footer align="center" style="font-size:25px"> <h6>&copy; <script>document.write(new Date().getFullYear());</script> Ain Irdina™️</h6>
+            </footer> 
+        </div> 
+<script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>
